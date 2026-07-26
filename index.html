@@ -164,13 +164,17 @@ nav{
   position:relative;padding-top:80px;
 }
 .eyebrow{
-  font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--teal);letter-spacing:2px;text-transform:uppercase;
+  font-family:var(--font-mono);font-size:18px;font-weight:700;color:var(--teal);letter-spacing:2px;text-transform:uppercase;
   display:flex;align-items:center;gap:10px;margin-bottom:20px;opacity:0;animation:fadeUp .8s ease .1s forwards;
 }
 .eyebrow::before{content:'';width:24px;height:1px;background:var(--teal);}
 .eyebrow-sub{
-  font-family:var(--font-mono);font-size:12px;color:var(--ink-dim);letter-spacing:1px;
-  margin-top:-12px;margin-bottom:20px;opacity:0;animation:fadeUp .8s ease .18s forwards;
+  font-family:var(--font-mono);font-size:16px;font-weight:700;color:var(--ink-dim);letter-spacing:1px;
+  margin-bottom:20px;opacity:0;animation:fadeUp .8s ease .1s forwards;
+}
+.hero-tagline{
+  font-family:var(--font-mono);font-size:14px;color:var(--ink-dim);letter-spacing:.5px;
+  margin-top:14px;opacity:0;animation:fadeUp .8s ease .32s forwards;
 }
 .hero h1{
   font-family:var(--font-display);font-weight:700;
@@ -413,10 +417,10 @@ footer{padding:34px 0;border-top:1px solid var(--line);text-align:center;font-fa
 <header class="hero container">
   <div class="hero-grid">
     <div class="hero-text">
-      <div class="eyebrow">Ayesha Javid</div>
       <div class="eyebrow-sub">AI Engineer · Systems Builder</div>
-      <h1>Building intelligent<br>systems that <span class="accent">think</span>,<br>play, and reason.</h1>
-      <p class="hero-sub">I'm Ayesha Javid, an AI undergraduate at Emerson University, Multan. I design and ship AI chatbots, game-playing agents, and low-level C++ engines. Ten shipped projects, all open-source, all wired end to end.</p>
+      <h1 style="color:var(--amber);">Ayesha Javid</h1>
+      <div class="hero-tagline">Building intelligent systems that think, play, and reason.</div>
+      <p class="hero-sub">AI undergraduate at Emerson University, Multan — designing and shipping AI chatbots, game-playing agents, and low-level C++ engines. Ten shipped projects, all open-source, all wired end to end.</p>
       <div class="hero-stats">
         <div class="stat"><div class="stat-num" data-count="10">0</div><div class="stat-label">PROJECTS SHIPPED</div></div>
         <div class="stat"><div class="stat-num" data-count="5">0</div><div class="stat-label">LANGUAGES USED</div></div>
